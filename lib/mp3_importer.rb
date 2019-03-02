@@ -3,6 +3,9 @@ class MP3Importer
 
   end
   def files
+  song = self.new
+   song.title = filename.split(" - ")[1]
+   song
   end
 
   def import(list_of_filenames)
